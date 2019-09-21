@@ -1,7 +1,10 @@
 def menu():
+    # declare list
     options = ["Exit", "Add an option", "Remove an option"]
     
+    # loop forever until user types 0
     while (True):
+        # print messages and menu
         print("Here is your menu!")
         print("Pick a number 0-2")
 
@@ -11,9 +14,11 @@ def menu():
             i += 1
 
         print("")
-        
+
+        # get user input
         userInput = int(input("Your choice >>> "))
 
+        # handle user input
         if (userInput == 0):
             break
         elif (userInput == 1):
@@ -28,5 +33,5 @@ def menu():
         else:
             print("Invalid option")
             
-        
+    # print exit message
     print("Goodbye!")
