@@ -16,8 +16,12 @@ def menu():
         print("")
 
         # get user input
-        userInput = int(input("Your choice >>> "))
-
+        userInput = input("Your choice >>> ")
+        if (not userInput.isdigit()):
+            print("Enter a numerical amount")
+            continue
+        userInput = int(userInput)
+        
         # handle user input
         if (userInput == 0):
             break
